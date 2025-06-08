@@ -38,9 +38,15 @@ module.exports = async (req, res) => {
         folder: "/blog-images",
       });
 
+      // Ensure we have a URL before sending response
+      if (!result.url) {
+        throw new Error("Failed to get image URL from ImageKit");
+      }
+
       return res.status(200).json({
         url: result.url,
         fileId: result.fileId,
+        success: true,
       });
     }
 
@@ -56,6 +62,7 @@ module.exports = async (req, res) => {
     return res.status(500).json({
       error: "Server error",
       details: err && err.message ? err.message : err,
+      success: false,
     });
   }
 };
