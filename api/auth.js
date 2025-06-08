@@ -1,8 +1,8 @@
 const ImageKit = require("imagekit");
 
 var imagekit = new ImageKit({
-  publicKey: "public_LIte2WVb2L+8OZtVNv3nDya6DgM=",
-  privateKey: "private_CtI9OtjxI/hCRamOq5NdALxxMvM=",
+  publicKey: "public_C5juPBxFMNI+aIo/PkxOrNXPtFM=",
+  privateKey: "private_+4cDAMAoXCWHmPL6WMMKiq5ZI+g=",
   urlEndpoint: "https://ik.imagekit.io/fhhfomunb/",
 });
 
