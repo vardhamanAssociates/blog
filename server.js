@@ -11,7 +11,7 @@ const imagekit = new ImageKit({
   urlEndpoint: "https://ik.imagekit.io/fhhfomunb",
 });
 
-app.use(cors({ origin: "https://vablogs.vercel.app/" }));
+app.use(cors({ origin: "*" }));
 
 app.options("/api/auth", (req, res) => {
   res.sendStatus(200);
