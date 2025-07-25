@@ -4,12 +4,20 @@
     {
       "src": "api/auth.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "api/delete-imagekit-file.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/auth",
       "dest": "/api/auth.js"
+    },
+    {
+      "src": "/api/delete-imagekit-file",
+      "dest": "/api/delete-imagekit-file.js"
     }
   ]
 }
